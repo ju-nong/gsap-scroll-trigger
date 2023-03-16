@@ -29,7 +29,8 @@ function App() {
                 end: "100",
                 scrub: 1,
             },
-            xPercent: -200,
+            xPercent: "-200",
+            opacity: 0,
         });
 
         gsap.from("#right-punch", {
@@ -39,7 +40,8 @@ function App() {
                 end: "100",
                 scrub: 1,
             },
-            xPercent: 200,
+            xPercent: "200",
+            opacity: 0,
         });
 
         // ScrollTrigger.create({
