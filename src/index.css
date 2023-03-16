@@ -16,3 +16,8 @@ section {
 h1 {
     font-size: 3rem;
 }
+
+img {
+    width: 200px;
+    cursor: pointer;
+}
