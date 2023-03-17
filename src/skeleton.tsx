@@ -8,6 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 function skeleton() {
     const scene = useRef<View3D>(null);
+    const [load, setLoad] = useState(false);
     // const [speed, setSpeed] = useState(0);
 
     function handleSpin(pos = 1) {
@@ -113,12 +114,17 @@ function skeleton() {
                 src="/skeleton/scene.gltf"
                 ref={scene}
                 background="#000"
+                onLoadFinish={() => {
+                    setLoad(true);
+                }}
 
                 // autoplay={{
                 //     speed: speed,
                 // }}
             />
-            <div className="scene-background"></div>
+            <div className="scene-background">
+                {load ? null : "님아 잠만 기달!"}
+            </div>
             <Link className="link" to="/">
                 어 뒤로가자
             </Link>
