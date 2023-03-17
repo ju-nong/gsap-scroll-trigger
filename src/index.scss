@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    border: 5px solid #ebf;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+img {
+    width: 200px;
+    cursor: pointer;
+}
+
+button {
+    padding: 1rem;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: #000;
+}
+
+#scene-container {
+    position: relative;
+    width: 100vw;
+    height: 300vh;
+    color: #fff;
+    overflow: hidden;
+
+    .link {
+        position: absolute;
+        bottom: 3rem;
+        z-index: 1;
+        color: #fff;
+    }
+
+    h1 {
+        text-align: center;
+        padding-top: 3rem;
+    }
+
+    p {
+        position: absolute;
+        z-index: -8;
+        font-size: 2rem;
+
+        &:nth-child(even) {
+            left: 10%;
+        }
+
+        &:nth-child(odd) {
+            right: 10%;
+        }
+
+        &#head {
+            top: 10%;
+        }
+
+        &#chest {
+            top: 25%;
+        }
+
+        &#waist {
+            top: 40%;
+        }
+
+        &#leg {
+            top: 55%;
+        }
+
+        &#foot {
+            top: 90%;
+        }
+    }
+
+    #skeleton-scene {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+    }
+
+    .scene-background {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -9;
+        background-color: rgba(0, 0, 0, 0.2);
+        top: 0;
+        left: 0;
+    }
+}

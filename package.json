@@ -9,10 +9,15 @@
         "preview": "vite preview"
     },
     "dependencies": {
+        "@egjs/react-view3d": "^2.3.1",
         "@types/gsap": "^3.0.0",
+        "@types/react-router-dom": "^5.3.3",
         "gsap": "^3.11.4",
+        "node-sass": "^8.0.0",
         "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^6.9.0",
+        "sass": "^1.59.3"
     },
     "devDependencies": {
         "@types/react": "^18.0.27",
