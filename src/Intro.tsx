@@ -94,7 +94,7 @@ function Intro() {
     }, []);
 
     return (
-        <div>
+        <div className="intro-container">
             <section id="section1">
                 <h1 id="zoom-in">어서오고</h1>
             </section>
