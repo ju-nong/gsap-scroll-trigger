@@ -12,12 +12,10 @@ function App() {
     }, [pathname]);
 
     return (
-        <div>
-            <Routes>
-                <Route path="/" element={<Intro />} />
-                <Route path="/skeleton" element={<Skeleton />} />
-            </Routes>
-        </div>
+        <Routes>
+            <Route path="/" element={<Intro />} />
+            <Route path="/skeleton" element={<Skeleton />} />
+        </Routes>
     );
 }
 
