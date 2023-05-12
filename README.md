@@ -1,4 +1,4 @@
-### Vite + React + GSAP
+### GSAP Scroll Trigger 💀
 
 GSAP에 ScrollTrigger를 사용해봤어요
 

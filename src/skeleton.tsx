@@ -113,7 +113,7 @@ function skeleton() {
                 id="skeleton-scene"
                 src="/skeleton/scene.gltf"
                 ref={scene}
-                background="#000"
+                background="#0f0f0f"
                 onLoadFinish={() => {
                     setLoad(true);
                 }}
