@@ -4,8 +4,6 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
 
-gsap.registerPlugin(ScrollTrigger);
-
 function skeleton() {
     const scene = useRef<View3D>(null);
     const [load, setLoad] = useState(false);

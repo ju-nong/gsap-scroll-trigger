@@ -1,9 +1,7 @@
 import { useLayoutEffect } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
-
-gsap.registerPlugin(ScrollTrigger);
+import { Horizon } from "./Horizon";
 
 function Intro() {
     function punch(text: string) {
@@ -89,8 +87,6 @@ function Intro() {
             scale: 3,
             opacity: 0,
         });
-
-        ScrollTrigger.refresh();
     }, []);
 
     return (
@@ -118,6 +114,7 @@ function Intro() {
             <section id="section4">
                 <h1 id="rotate">돌아가용</h1>
             </section>
+            <Horizon />
             <section id="section5">
                 <h1 id="zoom-out">어서가고</h1>
             </section>
